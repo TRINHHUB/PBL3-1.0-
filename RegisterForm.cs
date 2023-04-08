@@ -65,7 +65,7 @@ namespace PBL3_1._0_
                     return;
                 }
 
-                if (modify.TaiKhoans("Select * from ACCOUNT where Email = '" + gmail + "'").Count != 0)
+                if (modify.TaiKhoans("Select * from ACCOUNTT where Email = '" + gmail + "'").Count != 0)
                 {
                     MessageBox.Show("Email này đã được đăng kí,vui lòng đăng kí Email khác", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
@@ -79,7 +79,7 @@ namespace PBL3_1._0_
 
             try
             {
-                string query = "INSERT INTO ACCOUNT VALUES ('" + tkres + "','" + mkres + "','" + gmail + "','"+idposition+"')";
+                string query = "INSERT INTO ACCOUNTT VALUES ('" + tkres + "','" + mkres + "','" + gmail + "','"+idposition+"')";
                 modify.Command(query);
                 if(MessageBox.Show("Đăng kí thành công ! Bạn có muốn đăng nhập luôn không?","Thông Báo",MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes) {
                     Login login = new Login();
@@ -93,7 +93,13 @@ namespace PBL3_1._0_
                 MessageBox.Show("Tài khoản này đã được đăng kí");
             }
         }
-            
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Login form = new Login();
+            form.Show();
+            this.Hide();
+        }
     }
 }
 

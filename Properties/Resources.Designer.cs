@@ -69,5 +69,65 @@ namespace PBL3_1._0_.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _671822c2f63dd5f65d8fd15c9710420b {
+            get {
+                object obj = ResourceManager.GetObject("671822c2f63dd5f65d8fd15c9710420b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _671822c2f63dd5f65d8fd15c9710420b1 {
+            get {
+                object obj = ResourceManager.GetObject("671822c2f63dd5f65d8fd15c9710420b1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_window_35 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-window-35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_student_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-student-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngkit_old_scroll_png_1079801 {
+            get {
+                object obj = ResourceManager.GetObject("pngkit_old-scroll-png_1079801", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2023_04_08_093202 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2023-04-08 093202", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

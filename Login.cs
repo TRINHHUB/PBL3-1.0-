@@ -29,14 +29,18 @@ namespace PBL3_1._0_
 
         }
         Modify modify = new Modify();   
-        private void btnLogin_Click(object sender, EventArgs e)
-        {    
-                string tentaikhoan = txtTK.Text;
-                string matkhau = txtMK.Text;
 
-
-
-            if (tentaikhoan.Trim() == "")
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            string tentaikhoan = txtTK.Text;
+            string matkhau = txtMK.Text;
+            if (tentaikhoan == "Admin" && matkhau == "123")
+            {
+                Main form = new Main();
+                form.Show();
+                this.Hide();
+            }
+            else if (tentaikhoan.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập tên tài khoản!");
                 return;
@@ -48,11 +52,11 @@ namespace PBL3_1._0_
             }
             else
             {
-                string query = "Select * from ACCOUNT where TaiKhoan = '" + tentaikhoan + "' and MatKhau ='" + matkhau + "'";
+                string query = "Select * from ACCOUNTT where TaiKhoan = '" + tentaikhoan + "' and MatKhau ='" + matkhau + "'";
                 if (modify.TaiKhoans(query).Count != 0)
                 {
                     MessageBox.Show("Đăng nhập thành công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Main main = new Main();
+                    Detailform main = new Detailform();
                     main.Show();
                     this.Hide();
                 }
@@ -61,14 +65,13 @@ namespace PBL3_1._0_
                     MessageBox.Show("Tên tài khoản hoặc mật khẩu không chính xác", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-           
         }
 
-        private void button_Exit_Click(object sender, EventArgs e)
+        private void button_Exit_Click_1(object sender, EventArgs e)
         {
             DialogResult res;
             res = MessageBox.Show("Do you want to exit", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(res == DialogResult.Yes)
+            if (res == DialogResult.Yes)
             {
                 Application.Exit();
             }
@@ -78,18 +81,18 @@ namespace PBL3_1._0_
             }
         }
 
-        private void button_Register_Click(object sender, EventArgs e)
+        private void btnForget_Click_1(object sender, EventArgs e)
         {
-            this.Hide();
-            RegisterForm form = new RegisterForm();
-            form.Show();
-            
-        }
 
-        private void btnForget_Click(object sender, EventArgs e)
-        {
             ForgetPassword forgetpassword = new ForgetPassword();
             forgetpassword.Show();
+            this.Hide();
+        }
+
+        private void button_Register_Click_1(object sender, EventArgs e)
+        {
+            RegisterForm form = new RegisterForm();
+            form.Show();
             this.Hide();
         }
     }

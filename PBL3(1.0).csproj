@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +55,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="acountt.cs">
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Detailform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detailform.Designer.cs">
+      <DependentUpon>Detailform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="docgia.cs">
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="nxb.cs">
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLNS.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNS.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLNS.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLNS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNS.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sach.cs">
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sachmua.cs">
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tacgia.cs">
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="Modify.cs" />
@@ -75,6 +126,36 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="theloai.cs">
+      <DependentUpon>QLNS.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTDocGia.Designer.cs">
+      <DependentUpon>TTDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTNhanVien.Designer.cs">
+      <DependentUpon>TTNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLSach.Designer.cs">
+      <DependentUpon>QLSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TTSach.Designer.cs">
+      <DependentUpon>TTSach.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Detailform.resx">
+      <DependentUpon>Detailform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgetPassword.resx">
       <DependentUpon>ForgetPassword.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +178,19 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TTDocGia.resx">
+      <DependentUpon>TTDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTNhanVien.resx">
+      <DependentUpon>TTNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLSach.resx">
+      <DependentUpon>QLSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TTSach.resx">
+      <DependentUpon>TTSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,7 +205,41 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="QLNS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLNS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="QLNS.edmx.diagram">
+      <DependentUpon>QLNS.edmx</DependentUpon>
+    </None>
     <None Include="Resources\316243038_5401226130004934_809196118184628565_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\671822c2f63dd5f65d8fd15c9710420b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\671822c2f63dd5f65d8fd15c9710420b1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngkit_old-scroll-png_1079801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLNS.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QLNS.Context.cs</LastGenOutput>
+      <DependentUpon>QLNS.edmx</DependentUpon>
+    </Content>
+    <Content Include="QLNS.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLNS.edmx</DependentUpon>
+      <LastGenOutput>QLNS.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\icons8-student-64.png" />
+    <None Include="Resources\icons8-close-window-35.png" />
+    <None Include="Resources\Screenshot 2023-04-08 093202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
