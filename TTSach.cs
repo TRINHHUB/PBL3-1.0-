@@ -28,7 +28,7 @@ namespace PBL3_1._0_
             ShowDGVTTSach();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             QLNS db = new QLNS();
             sach s = new sach();
@@ -53,5 +53,14 @@ namespace PBL3_1._0_
 
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            QLSach form = new QLSach();
+            form.Show();
+            this.Hide();
+        }
+
+        
     }
 }

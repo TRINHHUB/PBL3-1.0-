@@ -35,5 +35,10 @@ namespace PBL3_1._0_
             form.Show();
             this.Hide();
         }
+
+        private void thôngTinNhàXuấtBảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

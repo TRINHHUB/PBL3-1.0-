@@ -43,6 +43,7 @@
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +91,7 @@
             this.thôngTinNhàXuấtBảnToolStripMenuItem.Name = "thôngTinNhàXuấtBảnToolStripMenuItem";
             this.thôngTinNhàXuấtBảnToolStripMenuItem.Size = new System.Drawing.Size(252, 26);
             this.thôngTinNhàXuấtBảnToolStripMenuItem.Text = "Thông Tin Nhà Xuất Bản";
+            this.thôngTinNhàXuấtBảnToolStripMenuItem.Click += new System.EventHandler(this.thôngTinNhàXuấtBảnToolStripMenuItem_Click);
             // 
             // thôngTinTácGiảToolStripMenuItem
             // 
@@ -158,10 +160,18 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(833, 6);
+            this.dateTimePicker1.Location = new System.Drawing.Point(867, 6);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(266, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(232, 22);
             this.dateTimePicker1.TabIndex = 2;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2.Location = new System.Drawing.Point(756, 5);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(105, 22);
+            this.dateTimePicker2.TabIndex = 3;
             // 
             // QLSach
             // 
@@ -170,6 +180,7 @@
             this.BackgroundImage = global::PBL3_1._0_.Properties.Resources.Screenshot_2023_04_08_093202;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1163, 577);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
@@ -177,7 +188,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "QLSach";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TTSach";
+            this.Text = "  ";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -201,5 +212,6 @@
         private System.Windows.Forms.ToolStripMenuItem đềXuấtKhuVựcSáchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }

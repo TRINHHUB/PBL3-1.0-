@@ -59,7 +59,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(449, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(496, 21);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -85,7 +85,7 @@
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.button3_Click);
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -136,11 +136,12 @@
             // button1
             // 
             this.button1.BackgroundImage = global::PBL3_1._0_.Properties.Resources.icons8_close_window_35;
-            this.button1.Location = new System.Drawing.Point(1126, 509);
+            this.button1.Location = new System.Drawing.Point(1048, 479);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(41, 35);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -274,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1179, 556);
+            this.ClientSize = new System.Drawing.Size(1226, 556);
             this.Controls.Add(this.txt_IDNXB);
             this.Controls.Add(this.txt_IDTheLoai);
             this.Controls.Add(this.txt_GhiChu);
