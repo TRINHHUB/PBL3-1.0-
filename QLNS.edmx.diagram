@@ -4,21 +4,21 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="989622e231004882906dafbb71a90c1a" Name="Diagram1" ZoomLevel="93">
-        <EntityTypeShape EntityType="PBL03Model.acountt" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="PBL03Model.docgia" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="PBL03Model.nxb" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="PBL03Model.sach" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="PBL03Model.sachmua" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="PBL03Model.sysdiagram" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PBL03Model.tacgia" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="PBL03Model.theloai" Width="1.5" PointX="5.25" PointY="10" IsExpanded="true" />
+      <Diagram DiagramId="84e4d4404ecd429da6f61525a8f15b24" Name="Diagram1">
+        <EntityTypeShape EntityType="PBL03Model.acountt" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL03Model.docgia" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL03Model.nxb" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL03Model.sach" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL03Model.sachmua" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL03Model.sysdiagram" Width="1.5" PointX="5.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL03Model.tacgia" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PBL03Model.theloai" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="PBL03Model.FK_docgia_acountt" ManuallyRouted="false" />
         <AssociationConnector Association="PBL03Model.FK_sachmua_docgia" ManuallyRouted="false" />
         <AssociationConnector Association="PBL03Model.FK_sach_nxb" ManuallyRouted="false" />
-        <AssociationConnector Association="PBL03Model.FK_sach_sachmua" ManuallyRouted="false" />
         <AssociationConnector Association="PBL03Model.FK_sach_tacgia" ManuallyRouted="false" />
         <AssociationConnector Association="PBL03Model.FK_sach_theloai" ManuallyRouted="false" />
+        <AssociationConnector Association="PBL03Model.FK_sachmua_sach" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

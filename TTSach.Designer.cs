@@ -270,6 +270,7 @@
             this.txt_IDNXB.Name = "txt_IDNXB";
             this.txt_IDNXB.Size = new System.Drawing.Size(194, 22);
             this.txt_IDNXB.TabIndex = 24;
+            this.txt_IDNXB.TextChanged += new System.EventHandler(this.txt_IDNXB_TextChanged);
             // 
             // TTSach
             // 

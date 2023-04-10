@@ -40,9 +40,10 @@ namespace PBL3_1._0_
             s.matacgia = Convert.ToInt32(txt_IDTacGia.Text);
             s.soluong = Convert.ToInt32(txt_SoLuong.Text);
             s.ghichu = txt_GhiChu.Text;
-            var l = db.saches.Add(s);
+            db.saches.Add(s);
             db.SaveChanges();
             ShowDGVTTSach();
+
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
@@ -61,6 +62,9 @@ namespace PBL3_1._0_
             this.Hide();
         }
 
-        
+        private void txt_IDNXB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

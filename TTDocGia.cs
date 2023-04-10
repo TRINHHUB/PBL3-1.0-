@@ -26,7 +26,7 @@ namespace PBL3_1._0_
             //{
             //    dgv_TTdocgia.CurrentRow.Cells["gioitinh"].Value = "Nam";
             //}
-            //else
+            //els
             //{
             //    dgv_TTdocgia.CurrentRow.Cells["gioitinh"].Value = "Nữ";
             //}

@@ -13,10 +13,10 @@ namespace PBL3_1._0_
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QLNS : DbContext
+    public partial class PBL03Entities : DbContext
     {
-        public QLNS()
-            : base("name=QLNS")
+        public PBL03Entities()
+            : base("name=PBL03Entities")
         {
         }
     

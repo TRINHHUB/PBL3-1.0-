@@ -55,47 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="acountt.cs">
-      <DependentUpon>QLNS.tt</DependentUpon>
-    </Compile>
     <Compile Include="Detailform.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Detailform.Designer.cs">
       <DependentUpon>Detailform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="docgia.cs">
-      <DependentUpon>QLNS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="nxb.cs">
-      <DependentUpon>QLNS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="QLNS.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLNS.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="QLNS.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLNS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="QLNS.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLNS.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="sach.cs">
-      <DependentUpon>QLNS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sachmua.cs">
-      <DependentUpon>QLNS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>QLNS.tt</DependentUpon>
-    </Compile>
-    <Compile Include="tacgia.cs">
-      <DependentUpon>QLNS.tt</DependentUpon>
     </Compile>
     <Compile Include="TaiKhoan.cs" />
     <Compile Include="Connection.cs" />
@@ -125,9 +89,6 @@
     </Compile>
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="theloai.cs">
-      <DependentUpon>QLNS.tt</DependentUpon>
     </Compile>
     <Compile Include="TTDocGia.cs">
       <SubType>Form</SubType>
@@ -205,13 +166,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="QLNS.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLNS.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="QLNS.edmx.diagram">
-      <DependentUpon>QLNS.edmx</DependentUpon>
-    </None>
     <None Include="Resources\316243038_5401226130004934_809196118184628565_n.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -224,16 +178,6 @@
     <None Include="Resources\pngkit_old-scroll-png_1079801.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="QLNS.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>QLNS.Context.cs</LastGenOutput>
-      <DependentUpon>QLNS.edmx</DependentUpon>
-    </Content>
-    <Content Include="QLNS.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLNS.edmx</DependentUpon>
-      <LastGenOutput>QLNS.cs</LastGenOutput>
-    </Content>
     <None Include="Resources\icons8-student-64.png" />
     <None Include="Resources\icons8-close-window-35.png" />
     <None Include="Resources\Screenshot 2023-04-08 093202.png" />
